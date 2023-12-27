@@ -1,6 +1,6 @@
-# electron-vite-vue
+# electron-vite-vue-element-plus
 
-🥳 Really simple `Electron` + `Vue` + `Vite` boilerplate.
+🥳 Really simple `Electron` + `Vue` + `Vite` + `Element-plus` boilerplate.
 
 <!-- [![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite) -->
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/ae3863e3-1aec-4eb1-8f9f-1890af56929d/deploy-status)](https://app.netlify.com/sites/electron-vite/deploys) -->
@@ -23,10 +23,10 @@
 
 ```sh
 # clone the project
-git clone https://github.com/electron-vite/electron-vite-vue.git
+git clone https://github.com/captainIT/electron-vite-vue-sth.git
 
 # enter the project directory
-cd electron-vite-vue
+cd electron-vite-vue-sth
 
 # install dependency
 npm install
@@ -34,10 +34,6 @@ npm install
 # develop
 npm run dev
 ```
-
-## Debug
-
-![electron-vite-react-debug.gif](https://github.com/electron-vite/electron-vite-react/blob/main/electron-vite-react-debug.gif?raw=true)
 
 ## Directory
 
