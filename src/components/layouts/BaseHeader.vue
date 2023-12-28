@@ -1,5 +1,12 @@
 <script lang="ts" setup>
 import { toggleDark } from "~/composables";
+import { useI18n } from 'vue-i18n'
+const i18n = useI18n()
+const changeLanguae=()=>{
+  console.log(i18n.locale.value)
+  i18n.locale.value=i18n.locale.value=='en'?'zh':'en'
+  console.log(i18n.locale.value)
+  }
 </script>
 
 <template>
@@ -25,6 +32,14 @@ import { toggleDark } from "~/composables";
         style="height: var(--ep-menu-item-height)"
       >
         <i inline-flex i="dark:ep-moon ep-sunny" />
+      </button>
+    </el-menu-item>
+    <el-menu-item h="full" @click="changeLanguae()">
+      <button
+        class="border-none w-full bg-transparent cursor-pointer"
+        style="height: var(--ep-menu-item-height)"
+      >
+        <i-fluent-mdl2-locale-language />
       </button>
     </el-menu-item>
   </el-menu>

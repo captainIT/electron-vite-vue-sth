@@ -21,6 +21,8 @@ declare module 'vue' {
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElTag: typeof import('element-plus/es')['ElTag']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    'IFluentMdl2:localeLanguage': typeof import('~icons/fluent-mdl2/locale-language')['default']
+    IFluentMdl2LocaleLanguage: typeof import('~icons/fluent-mdl2/locale-language')['default']
     Logos: typeof import('./components/Logos.vue')['default']
   }
 }
