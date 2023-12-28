@@ -8,6 +8,8 @@ import pkg from './package.json'
 import path from 'path'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import IconsResolver  from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
 import Unocss from 'unocss/vite'
 import {
   presetAttributify,
@@ -49,6 +51,7 @@ export default defineConfig(({ command }) => {
           ElementPlusResolver({
             importStyle: 'sass',
           }),
+          IconsResolver()
         ],
         dts: 'src/components.d.ts',
       }),
@@ -121,6 +124,9 @@ export default defineConfig(({ command }) => {
           transformerVariantGroup(),
         ]
       }),
+      Icons({
+        autoInstall:true
+      })
     ],
     server: process.env.VSCODE_DEBUG && (() => {
       const url = new URL(pkg.debug.env.VITE_DEV_SERVER_URL)
@@ -132,3 +138,4 @@ export default defineConfig(({ command }) => {
     clearScreen: false,
   }
 })
+

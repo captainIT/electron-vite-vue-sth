@@ -5,7 +5,7 @@
       <BaseSide />
       <div w="full" py="4">
         <Logos my="4" />
-        <HelloWorld msg="Hello Electron + Vue 3 + Element Plus + Vite" />
+        <HelloWorld msg="Electron + Vue 3 + Element Plus + Vite" />
       </div>
     </div>
   </el-config-provider>

@@ -17,7 +17,7 @@ const value1 = ref(true);
 </script>
 
 <template>
-  <h1 color="$ep-color-primary">{{ msg }}</h1>
+  <h1 color="$ep-color-primary">{{$t('msg.hello')}}  {{ msg }}</h1>
 
   <p>
     See
@@ -65,31 +65,8 @@ const value1 = ref(true);
     ></el-date-picker>
   </div>
 
-  <p>For example, we can custom primary color to 'green'.</p>
+  <p>{{ $t('msg.hello')  }}</p>
 
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test components.
-  </p>
-  <p>
-    Edit
-    <code>styles/element/var.scss</code> to test scss variables.
-  </p>
-
-  <p>
-    Full Example:
-    <a
-      href="https://github.com/element-plus/element-plus-vite-starter"
-      target="_blank"
-      >element-plus-vite-starter</a
-    >
-    | On demand Example:
-    <a
-      href="https://github.com/element-plus/unplugin-element-plus"
-      target="_blank"
-      >unplugin-element-plus/examples/vite</a
-    >
-  </p>
 </template>
 
 <style>
