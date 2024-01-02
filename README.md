@@ -50,3 +50,5 @@ npm run dev
 [Vue3！Element Plus 如何像 Element UI 一样使用 Icon?](https://zhuanlan.zhihu.com/p/507462743?utm_id=0)
 
 * 支持多语言切换
+
+* 支持electron-store   [对比localStorage优点](https://github.com/sindresorhus/electron-store/issues/17#issuecomment-307561288)
