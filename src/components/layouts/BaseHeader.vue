@@ -1,11 +1,24 @@
 <script lang="ts" setup>
 import { toggleDark } from "~/composables";
 import { useI18n } from 'vue-i18n'
+import { onMounted } from "vue";
+const Store = require('electron-store');
+
+const store = new Store();
 const i18n = useI18n()
+onMounted(() => {
+  let nowLang=store.get('lang')
+  console.log(`nowLang:${nowLang}`)
+  i18n.locale.value=nowLang
+})
 const changeLanguae=()=>{
+  
+  let nowLang=store.get('lang')
+  
+  i18n.locale.value=nowLang=='en'?'zh':'en'
+  store.set('lang', i18n.locale.value);
   console.log(i18n.locale.value)
-  i18n.locale.value=i18n.locale.value=='en'?'zh':'en'
-  console.log(i18n.locale.value)
+  
   }
 </script>
 

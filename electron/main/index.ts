@@ -40,6 +40,8 @@ const preload = join(__dirname, '../preload/index.js')
 const url = process.env.VITE_DEV_SERVER_URL
 const indexHtml = join(process.env.DIST, 'index.html')
 
+
+
 async function createWindow() {
   win = new BrowserWindow({
     title: 'Main window',
@@ -115,3 +117,10 @@ ipcMain.handle('open-win', (_, arg) => {
     childWindow.loadFile(indexHtml, { hash: arg })
   }
 })
+
+
+const ElectronStore = require('electron-store');
+ElectronStore.initRenderer();
+
+console.log(app.getPath('userData'));
+
